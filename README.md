@@ -8,7 +8,7 @@ mood Is an app that allows the user to select their mood from given options to s
 https://collectionapi.metmuseum.org/public/collection/v1/objects/ 
 
 ### API Snippet: 
-objectID: 437747,
+```objectID: 437747,
 isHighlight: false,
 accessionNumber: "1982.60.31",
 accessionYear: "1982",
@@ -52,17 +52,18 @@ objectBeginDate: 1663,
 objectEndDate: 1664,
 medium: "Oil on canvas",
 dimensions: "42 1/2 x 35 1/2 in. (108 x 90.2 cm)",
+```
 
 ### Wireframes: 
 https://whimsical.com/mood-62u5J97S1KELvFa48c5xWK
 
 ### MVP 
 
-Incorporate MET Museum’s API
-Create the page layout using HTML & Javascript
-Style using CSS & Flex Box 
-Choose moods and reder those options to the page with a drop down  
-Add a media query/breakpoint for mobile question                                                                                                                           
+*Incorporate MET Museum’s API
+*Create the page layout using HTML & Javascript
+*Style using CSS & Flex Box 
+*Choose moods and reder those options to the page with a drop down  
+*Add a media query/breakpoint for mobile question                                                                                                                           
 
 ### Post-MVP
 Add music and a second API for films and include a film suggestion, as well
