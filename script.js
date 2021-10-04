@@ -43,13 +43,15 @@ const showMETData = (metData) => {
   console.log(metData)
 
   const metDataDiv = document.querySelector('#met-data');
+  metDataDiv.innerHTML = ''
+
   const artistName = document.createElement('p');
   const date = document.createElement('p');
   const artwork = document.createElement('img');
 
   artistName.innerText = metData.artistDisplayName
   date.innerText = metData.objectDate
-  artwork.src = metData.primaryImage
+  artwork.src = metData.primaryImageSmall
   metDataDiv.append(artwork, artistName, date)
 }
     
