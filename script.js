@@ -39,12 +39,13 @@ const fetchMETData = (objectID) => {
       })
 }
 
+
 const showMETData = (metData) => {
   console.log(metData)
 
   const metDataDiv = document.querySelector('#met-data');
   metDataDiv.innerHTML = ''
-
+  
   const artistName = document.createElement('p');
   const date = document.createElement('p');
   const artwork = document.createElement('img');
@@ -55,6 +56,22 @@ const showMETData = (metData) => {
   metDataDiv.append(artwork, artistName, date)
 }
     
+
+const artDescription = [
+  {
+    objectId: "782307", description: "blah"
+  },
+  {
+    objectId: "436575", description: "blahblah"
+  }
+]
+
+const descriptionDiv = document.querySelector('#description');
+const moodOptions = document.querySelector('#select-mood').value;
+
+
+
+
   const button = document.querySelector('#get-artwork');
   button.addEventListener('click', (ev) => {
     ev.preventDefault();
@@ -68,5 +85,5 @@ const showMETData = (metData) => {
 
 
 
-// }
+
 

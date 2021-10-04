@@ -1,0 +1,32 @@
+/* body {
+0% {
+  background-color: B1718A;
+}
+20% {
+  background-color: A071B1;
+}
+40% {
+   background-color: 718FB1;
+ }
+60% {
+
+}
+} */
+
+
+h1 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 100px;
+  margin-top: 0;
+}
+
+#dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+#met-data {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
