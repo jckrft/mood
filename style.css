@@ -1,23 +1,38 @@
+/* https://css-tricks.com/ease-out-in-ease-in-out/
+https://stackoverflow.com/questions/43371912/how-to-make-an-html-css-js-color-changing-background-like-kahoot-it-has
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+
 /* body {
+  animation: 10000ms ease-in-out infinite color-change;
+}
+@keyframes color-change {
 0% {
-  background-color: B1718A;
+  background-color: #B1718A;
 }
 20% {
-  background-color: A071B1;
+  background-color: #A071B1;
 }
 40% {
-   background-color: 718FB1;
- }
+  background-color: #718FB1;
+}
 60% {
-
+  background-color: #B1718A;
+}
+80% {
+  background-color: #A071B1;
+}
+100% {
+  background-color: #718FB1;
 }
 } */
+
 
 
 h1 {
   font-family: 'Mrs Saint Delafield', cursive;
   font-size: 100px;
   margin-top: 0;
+  padding-left: 25px;
 }
 
 #dropdown {
@@ -27,6 +42,24 @@ h1 {
 
 #met-data {
   display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  /* max-width: 50%; */
+  font-size: x-small;
+  /* margin: 0; */
+}
+
+#met-image {
+  display: flex;
   justify-content: center;
   /* flex-direction: column; */
+  /* align-self: center; */
+  /* align-items: center; */
+  /* max-width: 50%; */
 }
+
+/* #met-data.align-self {
+  align-self: center;
+} */

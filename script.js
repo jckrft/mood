@@ -31,6 +31,7 @@ const fetchMETData = (objectID) => {
       .then((resJSON) => {
         console.log(resJSON);
         showMETData(resJSON);
+        // addImage(resJSON);
 
 
       })
@@ -43,17 +44,29 @@ const fetchMETData = (objectID) => {
 const showMETData = (metData) => {
   console.log(metData)
 
+  const metImageDiv = document.querySelector('#met-image');
+  metImageDiv.innerHTML = ''
+  const artwork = document.createElement('img');
+  artwork.src = metData.primaryImageSmall
+  metImageDiv.append(artwork)
+
+  
   const metDataDiv = document.querySelector('#met-data');
   metDataDiv.innerHTML = ''
-  
+
   const artistName = document.createElement('p');
+  const title = document.createElement('p')
   const date = document.createElement('p');
-  const artwork = document.createElement('img');
+  // const artwork = document.createElement('img');
 
   artistName.innerText = metData.artistDisplayName
+  title.innerText = metData.title
   date.innerText = metData.objectDate
-  artwork.src = metData.primaryImageSmall
-  metDataDiv.append(artwork, artistName, date)
+  // artwork.src = metData.primaryImage
+  // artwork.src = metData.primaryImageSmall
+  // artwork.style.width = '50%'
+  metDataDiv.append(artistName, title, date)
+  
 }
     
 
