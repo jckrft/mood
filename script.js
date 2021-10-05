@@ -76,12 +76,11 @@ const showMoodDescription = (moodOptions) => {
     "782307": "blah",
     "436575": "blahblah",
     }
-  const moodDescriptionDiv = document.querySelector('#description')
-  moodDescriptionDiv.innerHTML = ''
+    const moodDescriptionDiv = document.querySelector('#description')
+    moodDescriptionDiv.innerHTML = ''
     const moodDescription = document.createElement('p');
     moodDescription.innerText = moodDescriptions[moodOptions]
     moodDescriptionDiv.append(moodDescription)
-    
 }
 
 

@@ -61,6 +61,13 @@ h1 {
   /* max-width: 50%; */
 }
 
-/* #met-data.align-self {
-  align-self: center;
-} */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 80px;
+  }
+  
+  #met-image img {
+    width: 100%;
+  }
+}
+
