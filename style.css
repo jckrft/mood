@@ -2,7 +2,7 @@
 https://stackoverflow.com/questions/43371912/how-to-make-an-html-css-js-color-changing-background-like-kahoot-it-has
 https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
 
-/* body {
+body {
   animation: 10000ms ease-in-out infinite color-change;
 }
 @keyframes color-change {
@@ -24,7 +24,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
 100% {
   background-color: #718FB1;
 }
-} */
+}
 
 
 
@@ -54,6 +54,7 @@ h1 {
 #met-image {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
   /* flex-direction: column; */
   /* align-self: center; */
   /* align-items: center; */

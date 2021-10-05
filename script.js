@@ -70,19 +70,19 @@ const showMETData = (metData) => {
 }
     
 
-const artDescription = [
-  {
-    objectId: "782307", description: "blah"
-  },
-  {
-    objectId: "436575", description: "blahblah"
-  }
-]
-
-const descriptionDiv = document.querySelector('#description');
-const moodOptions = document.querySelector('#select-mood').value;
-
-
+const showMoodDescription = (moodOptions) => {
+  const moodDescriptions =
+    {
+    "782307": "blah",
+    "436575": "blahblah",
+    }
+  const moodDescriptionDiv = document.querySelector('#description')
+  moodDescriptionDiv.innerHTML = ''
+    const moodDescription = document.createElement('p');
+    moodDescription.innerText = moodDescriptions[moodOptions]
+    moodDescriptionDiv.append(moodDescription)
+    
+}
 
 
   const button = document.querySelector('#get-artwork');
@@ -93,6 +93,7 @@ const moodOptions = document.querySelector('#select-mood').value;
     // const objectURL = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${moodOptions}`
   
     fetchMETData(moodOptions);
+    showMoodDescription(moodOptions);
   });
 
 
