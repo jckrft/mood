@@ -66,7 +66,8 @@ https://whimsical.com/mood-62u5J97S1KELvFa48c5xWK
 *Add a media query/breakpoint for mobile question                                                                                                                           
 
 ### Post-MVP
-Add music and a second API for films and include a film suggestion, as well
+*Add a second API for films to include a film suggestion, as well 
+*Animated color changing background.
 
 
 
@@ -83,13 +84,13 @@ Add music and a second API for films and include a film suggestion, as well
 | Friday 10/8.   | present                |       |
 
 ### Timeframe
-| Task            | Estimated             | Actual|
-| -------------  |:-------------:         | -----:|
-| Friday 10/1    | finish pitch           |       |
-| Saturday 10/2  | pseduo code & find art |       |
-| Sunday 10/3    | structure HTML & CSS.  |       |
-| Monday 10/4.   | code code code.        |       |
-| Tuesday 10/5.  |                        |       |
-| Wednesday 10/6 |                        |       |
-| Thursday 10/7. |                        |       |
-| Friday 10/8.   | present                |       |
+| Task           | Estimated              | Actual |
+| -------------  |:-------------:         | -----: |
+| finding API    | 20 min                 | 5 min  |
+| solidify idea  | 30 min                 | 20 min |
+| finish pitch   | 3 hr                   | 3 hr   |
+| write HTML     | 1 hr                   | 1 hr   |
+| start JS       | 3 hr                   | 3 hr   |
+| finish JS      | 2 hr                   | 2 hr   |
+| start CSS      | 3 hr                   | 2 hr   |
+| finish CSS     | 1 hr                   |        |
