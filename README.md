@@ -59,15 +59,15 @@ https://whimsical.com/mood-62u5J97S1KELvFa48c5xWK
 
 ### MVP 
 
-*Incorporate MET Museum’s API
-*Create the page layout using HTML & Javascript
-*Style using CSS & Flex Box 
-*Choose moods and reder those options to the page with a drop down  
-*Add a media query/breakpoint for mobile question                                                                                                                           
+* Incorporate MET Museum’s API
+* Create the page layout using HTML & Javascript
+* Style using CSS & Flex Box 
+* Choose moods and reder those options to the page with a drop down  
+* Add a media query/breakpoint for mobile question                                                                                                                           
 
 ### Post-MVP
-*Add a second API for films to include a film suggestion, as well 
-*Animated color changing background.
+* Add a second API for films to include a film suggestion 
+* Animated color changing background.
 
 
 
