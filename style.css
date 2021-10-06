@@ -79,6 +79,7 @@ h1 {
   font-family: 'Lato', sans-serif;
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 footer {

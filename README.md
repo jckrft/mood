@@ -73,13 +73,13 @@ Add music and a second API for films and include a film suggestion, as well
 ### Goals
 | Day            | Task                   | y/n   |
 | -------------  |:-------------:         | -----:|
-| Friday 10/1    | finish pitch           |       |
-| Saturday 10/2  | pseduo code & find art |       |
-| Sunday 10/3    | structure HTML & CSS.  |       |
-| Monday 10/4.   | code code code.        |       |
-| Tuesday 10/5.  |                        |       |
-| Wednesday 10/6 |                        |       |
-| Thursday 10/7. |                        |       |
+| Friday 10/1    | finish pitch           |    y  |
+| Saturday 10/2  | pseduo code & find art |    y  |
+| Sunday 10/3    | structure HTML & JS    |    y  |
+| Monday 10/4.   | JS & CSS               |    y  |
+| Tuesday 10/5.  | CSS                    |    y  |
+| Wednesday 10/6 | post MVP work          |       |
+| Thursday 10/7. | polish                 |       |
 | Friday 10/8.   | present                |       |
 
 ### Timeframe
