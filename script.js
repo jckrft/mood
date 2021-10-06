@@ -75,6 +75,10 @@ const showMoodDescription = (moodOptions) => {
     {
     "782307": "blah",
     "436575": "blahblah",
+    "36065": "blahlbahlbh",
+    "399140": "sdjaiegesjg",
+    "436041": "hbsedhbgsegv",
+    "435876": "fhbsuejbfiaue",
     }
     const moodDescriptionDiv = document.querySelector('#description')
     moodDescriptionDiv.innerHTML = ''
