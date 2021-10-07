@@ -74,14 +74,14 @@ https://whimsical.com/mood-62u5J97S1KELvFa48c5xWK
 ### Goals
 | Day            | Task                   | y/n   |
 | -------------  |:-------------:         | -----:|
-| Friday 10/1    | finish pitch           |    y  |
-| Saturday 10/2  | pseduo code & find art |    y  |
-| Sunday 10/3    | structure HTML & JS    |    y  |
-| Monday 10/4.   | JS & CSS               |    y  |
-| Tuesday 10/5.  | CSS                    |    y  |
-| Wednesday 10/6 | post MVP work          |       |
-| Thursday 10/7. | polish                 |       |
-| Friday 10/8.   | present                |       |
+| Friday 10/1    | finish pitch           |   y   |
+| Saturday 10/2  | pseduo code & find art |   y   |
+| Sunday 10/3    | structure HTML & JS    |   y   |
+| Monday 10/4.   | JS & CSS               |   y   |
+| Tuesday 10/5.  | CSS                    |   y   |
+| Wednesday 10/6 | post MVP work          |   y   |
+| Thursday 10/7. | polish                 |   y   |
+| Friday 10/8.   | present                |   y   |
 
 ### Timeframe
 | Task           | Estimated              | Actual |
