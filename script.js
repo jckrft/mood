@@ -20,6 +20,7 @@
 
 
 
+
 const fetchMETData = (objectID) => {
   const metAPIUrl = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`;
 
@@ -31,7 +32,6 @@ const fetchMETData = (objectID) => {
       .then((resJSON) => {
         console.log(resJSON);
         showMETData(resJSON);
-        // addImage(resJSON);
 
 
       })
@@ -57,14 +57,10 @@ const showMETData = (metData) => {
   const artistName = document.createElement('p');
   const title = document.createElement('p')
   const date = document.createElement('p');
-  // const artwork = document.createElement('img');
 
   artistName.innerText = metData.artistDisplayName
   title.innerText = metData.title
   date.innerText = metData.objectDate
-  // artwork.src = metData.primaryImage
-  // artwork.src = metData.primaryImageSmall
-  // artwork.style.width = '50%'
   metDataDiv.append(artistName, title, date)
   
 }
@@ -87,16 +83,43 @@ const showMoodDescription = (moodOptions) => {
     moodDescriptionDiv.append(moodDescription)
 }
 
+// const showMovieList = (moodOptions) => {
+//   const movieOptions =
+//   {
+//     "The Killing of a Sacred Deer" : "782307",
+//   }
+
+//   const movieListDiv = document.querySelector('#movie-list')
+//   const movieInfo = document.createElement('p');
+//   movieInfo.innerText = movieOptions[moodOptions]
+//   movieListDiv.append(movieInfo)
+// }
 
   const button = document.querySelector('#get-artwork');
   button.addEventListener('click', (ev) => {
     ev.preventDefault();
 
     const moodOptions = document.querySelector('#select-mood').value;
-    // const objectURL = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${moodOptions}`
-  
+
+//     const API_KEY = 'd3890d45';
+//     const input = document.querySelector('#select-mood').value;
+//     const base = 'http://www.omdbapi.com/?apikey=d3890d45&'
+//     const poster = 'http://img.omdbapi.com/?apikey=d3890d45&'
+
+//     fetch(`http://www.omdbapi.com/?s=${input}'&type=movie&apikey=${API_KEY}`)
+//     .then((results) => {
+//     return results.json()
+//     })
+//     .then((resultsJSON) => {
+//       console.log(resultsJSON)
+//       showMovieList(resultsJSON.Search)
+// })
+    
+    
+    
     fetchMETData(moodOptions);
     showMoodDescription(moodOptions);
+    // showMovieList(moodOptions);
   });
 
 
