@@ -68,7 +68,7 @@ h1 {
 #met-image {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 25px;
   /* flex-direction: column; */
   /* align-self: center; */
   /* align-items: center; */
@@ -80,6 +80,13 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+#description p {
+  text-align: center;
+  font-size: small;
+  max-width: 400px;
 }
 
 footer {
