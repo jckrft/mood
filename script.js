@@ -18,16 +18,32 @@
   options show met data
 */
 
-
-
-
-const fetchMETData = (objectID) => {
-  const metAPIUrl = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`;
-
-  console.log('request');
-  console.log(metAPIUrl);
+const word = "despondent"
+const fetchMERData = (word) => {
   
-  fetch(metAPIUrl)
+  const API_KEY = '9beda46b-4c74-4563-bcd0-a24cac9ad8c2';
+  const base = 'https://www.dictionaryapi.com/api/v3/references/collegiate/json/?key=9beda46b-4c74-4563-bcd0-a24cac9ad8c2'
+
+  const dicURl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${API_KEY}`
+    console.log(dicURl)
+    
+  fetch(dicURl)
+    .then((results) => {
+      return results.json()
+    })
+    .then((resultsJSON) => {
+      console.log(resultsJSON)
+      showDefinition(resultsJSON)
+    })
+}
+
+  const fetchMETData = (objectID) => {
+    const metAPIUrl = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`;
+
+    console.log('request');
+    console.log(metAPIUrl);
+  
+    fetch(metAPIUrl)
       .then((res) => { return res.json() })
       .then((resJSON) => {
         console.log(resJSON);
@@ -36,91 +52,81 @@ const fetchMETData = (objectID) => {
 
       })
       .catch((err) => {
-          console.error(err);
+        console.error(err);
       })
-}
+  }
 
 
-const showMETData = (metData) => {
-  console.log(metData)
+  const showMETData = (metData) => {
+    console.log(metData)
 
-  const metImageDiv = document.querySelector('#met-image');
-  metImageDiv.innerHTML = ''
-  const artwork = document.createElement('img');
-  artwork.src = metData.primaryImageSmall
-  metImageDiv.append(artwork)
+    const metImageDiv = document.querySelector('#met-image');
+    metImageDiv.innerHTML = ''
+    const artwork = document.createElement('img');
+    artwork.src = metData.primaryImageSmall
+    metImageDiv.append(artwork)
 
   
-  const metDataDiv = document.querySelector('#met-data');
-  metDataDiv.innerHTML = ''
+    const metDataDiv = document.querySelector('#met-data');
+    metDataDiv.innerHTML = ''
 
-  const artistName = document.createElement('p');
-  const title = document.createElement('p')
-  const date = document.createElement('p');
+    const artistName = document.createElement('p');
+    const title = document.createElement('p')
+    const date = document.createElement('p');
 
-  artistName.innerText = metData.artistDisplayName
-  title.innerText = metData.title
-  date.innerText = metData.objectDate
-  metDataDiv.append(artistName, title, date)
+    artistName.innerText = metData.artistDisplayName
+    title.innerText = metData.title
+    date.innerText = metData.objectDate
+    metDataDiv.append(artistName, title, date)
   
-}
+  }
     
 
-const showMoodDescription = (moodOptions) => {
-  const moodDescriptions =
+  const showMoodDescription = (moodOptions) => {
+    const moodDescriptions =
     {
-    "782307": "blah",
-    "436575": "blahblah",
-    "369627": "jnsdvikvs",
-    "36065": "blahlbahlbh",
-    "399140": "sdjaiegesjg",
-    "436041": "hbsedhbgsegv",
-    "435876": "fhbsuejbfiaue",
+      "782307": "When you're feeling the opposite of surprised, or: an alternative to deer caught in headlights",
+      "436575": "A sky painted as dark as your feelings",
+      "369627": "Is this hand real? Is it mine... or yours?",
+      "36065": "You're sleepy, you sleep. A man with his priorities straight.",
+      "399140": "A woman alone in a field, it's both literal and metaphorical",
+      "436041": "In the story of Samson and Delilah, Delilah convinces Samson to share why he possesses 'God like' strength, when he reveals that it is actually due to his hair, she waits until he falls asleep and cuts it off. The Philistines come and are able to successfully kill him now that he is without strength. Malice, indeed.",
+      "435876": "Madame Cézanne was the artis's wife. This is  obviously the look of a woman who does not believe the story of why that other woman is in your DMs",
     }
     const moodDescriptionDiv = document.querySelector('#description')
     moodDescriptionDiv.innerHTML = ''
     const moodDescription = document.createElement('p');
     moodDescription.innerText = moodDescriptions[moodOptions]
     moodDescriptionDiv.append(moodDescription)
-}
+  }
 
-// const showMovieList = (moodOptions) => {
-//   const movieOptions =
-//   {
-//     "The Killing of a Sacred Deer" : "782307",
-//   }
 
-//   const movieListDiv = document.querySelector('#movie-list')
-//   const movieInfo = document.createElement('p');
-//   movieInfo.innerText = movieOptions[moodOptions]
-//   movieListDiv.append(movieInfo)
-// }
+  const showDefinition = (word) => {
+    // const definitions =
+    // {
+    //   "782307": "despondent"
+    // }
+  
+    const moodDefinitionDiv = document.querySelector('#definition')
+    moodDefinitionDiv.innerHTML = ''
+    const moodDefinition = document.createElement('p');
+    moodDefinition.innerText = word[0].shortdef
+    moodDefinitionDiv.append(moodDefinition)
+  }
+
 
   const button = document.querySelector('#get-artwork');
   button.addEventListener('click', (ev) => {
     ev.preventDefault();
 
     const moodOptions = document.querySelector('#select-mood').value;
-
-//     const API_KEY = 'd3890d45';
-//     const input = document.querySelector('#select-mood').value;
-//     const base = 'http://www.omdbapi.com/?apikey=d3890d45&'
-//     const poster = 'http://img.omdbapi.com/?apikey=d3890d45&'
-
-//     fetch(`http://www.omdbapi.com/?s=${input}'&type=movie&apikey=${API_KEY}`)
-//     .then((results) => {
-//     return results.json()
-//     })
-//     .then((resultsJSON) => {
-//       console.log(resultsJSON)
-//       showMovieList(resultsJSON.Search)
-// })
     
-    
-    
+    fetchMERData(word)
+    // fetchMERData(moodOptions);
     fetchMETData(moodOptions);
+    // fetchMERData(moodOptions);
+    showDefinition(word)
     showMoodDescription(moodOptions);
-    // showMovieList(moodOptions);
   });
 
 
