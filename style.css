@@ -54,7 +54,7 @@ h1 {
 }
 
 #met-data {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display', serif;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
@@ -76,7 +76,7 @@ h1 {
 }
 
 #description {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display', serif;
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -90,7 +90,7 @@ h1 {
 }
 
 footer {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   padding-top: 100px;
 }
