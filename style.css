@@ -18,12 +18,6 @@ body {
 100% {
   background-color: #B1718A;
 }
-/* 80% {
-  background-color: #A071B1;
-}
-100% {
-  background-color: #B1718A;
-} */
 }
 
 
@@ -56,23 +50,16 @@ h1 {
 #met-data {
   font-family: 'Playfair Display', serif;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-self: center;
   align-items: center;
-  /* max-width: 50%; */
   font-size: 12px;
-  /* margin: 0; */
 }
 
 #met-image {
   display: flex;
   justify-content: center;
   padding-top: 25px;
-  /* flex-direction: column; */
-  /* align-self: center; */
-  /* align-items: center; */
-  /* max-width: 50%; */
 }
 
 #description {

@@ -85,13 +85,13 @@
   const showMoodDescription = (moodOptions) => {
     const moodDescriptions =
     {
-      "782307": "When you're feeling the opposite of surprised, or: the aftermath of a deer caught in headlights",
-      "436575": "A sky painted as dark as your feelings",
+      "782307": "When you're feeling the opposite of surprised, or: the aftermath of a deer caught in headlights.",
+      "436575": "A sky painted as dark as your feelings.",
       "369627": "Is this hand real? Is it mine... or yours?",
       "36065": "You're sleepy, you sleep. A man with his priorities straight.",
       "399140": "A woman alone in a field. It's both literal and metaphorical.",
-      "436041": "In the story of Samson and Delilah, Delilah convinces Samson to share why he possesses 'God like' strength, when he reveals that it is actually due to his hair, she waits until he falls asleep and cuts it off. The Philistines come and are able to successfully kill him now that he is without strength. Malice, indeed.",
-      "435876": "Madame Cézanne was the artis's wife. This is  obviously the look of a woman who does not believe the story of why that other woman is in your DMs",
+      "436041": "In the story of Samson and Delilah, Delilah convinces Samson to share why he possesses such great strength, when he reveals that it is actually due to his hair, she waits until he falls asleep and cuts it off. The Philistines are then able to successfully kill him now that he is without strength. Malice, indeed.",
+      "435876": "Madame Cézanne was the artist's wife. This is  obviously the look of a woman who does not believe the story of why that other girl is in your DMs.",
     }
     const moodDescriptionDiv = document.querySelector('#description')
     moodDescriptionDiv.innerHTML = ''
