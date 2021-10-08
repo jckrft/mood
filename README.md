@@ -1,11 +1,12 @@
 ### App Title: 
-mood                                      
+mood.                                      
 
 ### App Description: 
-mood Is an app that allows the user to select their mood from given options to show an art piece that corresponds to their mood.  
+mood. is an app that allows the user to select their mood from given options to show a corresponding art piece.  
 
 ### API:
 https://collectionapi.metmuseum.org/public/collection/v1/objects/ 
+* extracting Artist info: name, title of work, year, and image
 
 ### API Snippet: 
 ```objectID: 437747,
@@ -63,7 +64,7 @@ https://whimsical.com/mood-62u5J97S1KELvFa48c5xWK
 * Create the page layout using HTML & Javascript
 * Style using CSS & Flex Box 
 * Choose moods and reder those options to the page with a drop down  
-* Add a media query/breakpoint for mobile question                                                                                                                           
+* Add a media query for mobile                                            
 
 ### Post-MVP
 * Add a second API for films to include a film suggestion 
