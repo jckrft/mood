@@ -123,9 +123,8 @@
     
     // fetchMERData(word)
     // fetchMERData(moodOptions);
-    fetchMETData(moodOptions);
-    // fetchMERData(moodOptions);
     // showDefinition(word)
+    fetchMETData(moodOptions);
     showMoodDescription(moodOptions);
   });
 
