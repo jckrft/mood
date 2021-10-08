@@ -94,3 +94,5 @@ https://whimsical.com/mood-62u5J97S1KELvFa48c5xWK
 | finish JS      | 2 hr                   | 2 hr   |
 | start CSS      | 3 hr                   | 2 hr   |
 | finish CSS     | 1 hr                   | 1 hr   |
+| post MVP       | 3 hr                   | 3 hr   |
+| revisions      | 1 hr                   | 1 hr   |
